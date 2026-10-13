@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Question Answering System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Extractive QA System</h2>
+        <p class="subtitle">Powered by Fine-Tuned RoBERTa with Confidence Scoring</p>
+
+        <button id="randomBtn" class="secondary-btn" onclick="loadRandomPassage()">🎲 Load Random Passage & 5 Questions</button>
+
+        <div class="input-group">
+            <label for="contextInput">Context Passage</label>
+            <textarea id="contextInput" rows="6" placeholder="Click above to load a random passage or type your own..."></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="questionSelect">Select or Type Question</label>
+            <select id="questionSelect" onchange="selectQuestion(this)">
+                <option value="">-- Choose a generated question or type below --</option>
+            </select>
+            <input type="text" id="questionInput" placeholder="Type your question or pick one above..." style="margin-top: 10px;">
+        </div>
+
+        <button id="submitBtn" onclick="handlePredict()">Extract Answer</button>
+
+        <div id="loading" class="spinner" style="display: none;">Analyzing passage and computing confidence...</div>
+
+        <div id="resultContainer" class="result-box" style="display: none">
+            <h3>Extracted Answer:</h3>
+            <p id="answerOutput"></p>
+            <div class="confidence-badge">Confidence Score: <span id="confidenceOutput"></span>%</div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

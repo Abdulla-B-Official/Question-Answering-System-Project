@@ -1,0 +1,13 @@
+# Virtual Environments
+venv/
+.venv/
+ENV/
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Training & Local Checkpoints & Model Weights
+results_roberta/
+saved_qa_model/*.safetensors
