@@ -1,5 +1,17 @@
 # Extractive Question-Answering System 
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NLP](https://img.shields.io/badge/NLP-Question_Answering-orange?style=for-the-badge)
+![Transformers](https://img.shields.io/badge/Transformers-BERT_%7C_RoBERTa-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Web_API-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+<p align="center">
+  <b>An end-to-end Question Answering (QA) system designed to extract accurate answers from unstructured text documents and context passages using pre-trained NLP transformer models and a modular web API backend.</b>
+</p>
+
+---
 ## Overview
 
 The Extractive Question-Answering System is an AI-powered natural language processing application designed to extract precise answer spans from text passages given a specific question.
